@@ -8,18 +8,18 @@ Handling images' data: Dealing with Images, enables me to use the data augmentat
 # Overview and Explanation of the Image Classification Project:
 In this project, I mainly used the assignments files I did during the semester. Also, I looked at some utility files to help me. The goal was to make an image classification model that works well, So here is  a brief step-by-step overview of the project.
 
-Data Preprocessing
+**Data Preprocessing
 
 Data Splitting: I split the dataset into a training set and a test set with a test size of 20%, because we have a sufficient dataset to train and evaluate. This lets me check how good the model is before submitting the results. The training set was used to train the model, and the test set was used to see how well the model did on the test set.
 
-Data Augmentation: 
+**Data Augmentation: 
 To help the model generalize better and avoid overfitting, I used data augmentation techniques. This included random rotations, flips, shifts, and zooms. Data augmentation makes the training dataset bigger by creating different versions of the original images.
 
 Normalization: Image pixel values were changed to a range of 0 to 1 by dividing by 255. This helps the model train faster.
 
 Resizing: All images were resized to the same size, so they all had the same input dimensions for the CNN model. This is important because neural networks need fixed-size inputs.
 
-CNN Model Architecture
+**CNN Model Architecture
 The CNN model I used was designed to balance complexity and efficiency. Here's a summary of the architecture:
 
 Input Layer: Takes the preprocessed images as input.
@@ -32,7 +32,7 @@ Fully Connected Layers: After flattening the output from the convolutional and p
 
 Output Layer.
 
-Training and Evaluation Process
+**Training and Evaluation Process
 The training and evaluation process had several steps, changing hyperparameters step by step to get good accuracy:
 
 Hyperparameter Tuning: 
